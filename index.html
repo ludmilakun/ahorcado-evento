@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Pantalla de Bienvenida -->
+    <div id="welcome-screen" class="screen">
+        <h1>¡Bienvenido al Ahorcado!</h1>
+        <button id="start-button">Comenzar Juego</button>
+    </div>
+
+    <!-- Pantalla de Juego -->
+    <div id="game-screen" class="screen hidden">
+        <div class="game-container">
+            <div class="hangman-drawing">
+                <!-- Aquí irá el dibujo del ahorcado -->
+            </div>
+            <div class="game-info">
+                <div id="word-display"></div>
+                <div id="attempts">Intentos restantes: <span id="attempts-count">6</span></div>
+                <div id="letters-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla Final -->
+    <div id="end-screen" class="screen hidden">
+        <h2 id="result-message"></h2>
+        <button id="restart-button">Jugar de nuevo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
